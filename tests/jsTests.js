@@ -12,6 +12,13 @@ function pigLatinizer(input) {
 }
 console.log(output);
 Describe: pigLatinizer();
+
+Test: "It will take using input from form and place value in input variable"
+Expect: (input("I am a sentence.").toEqual("I am a sentence."))
+Test: "It will take the input string and seperate each word into own individual string"
+Expect: (input("I am a sentence.").toEqual("I", "am", "a", "sentence."))
+
+
 Test: "It will add 'way' to the end of words that begin with a vowel"
 Expect: (pigLatinizer("a")).toEqual("away");
 

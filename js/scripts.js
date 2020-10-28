@@ -8,7 +8,14 @@ $(document).ready(function(){
   $("#sentence").submit(function(event){
     event.preventDefault();
     let input = $("input#original").val();
-    console.log(input);
+    
+    let words = input.split(" ");
+
+    console.log(words);
+
+
+
+
   })
 
 })
